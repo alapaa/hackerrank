@@ -17,7 +17,7 @@ int mat[5000+1][5000+1];
 // https://www.geeksforgeeks.org/lcs-longest-common-subsequence-three-strings/
 
 int commonChild(string s1, string s2) {
-  // mat[i][j] is length of longest common subsequence in s1[i-1], s2[j-1].
+  // mat[i][j] is length of longest common subsequence in s1[0,i-1], s2[0,j-1].
 
   for (int i = 0; i <= s1.size(); i++) {
     for (int j = 0; j <= s2.size(); j++) {
